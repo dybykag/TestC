@@ -6,16 +6,12 @@
 
 extern "C"
 
-jstring
-Java_shinelee_testc_MainActivity_stringFromJNI(
-        JNIEnv *env,
-        jobject /* this */) {
+JNIEXPORT jstring JNICALL
+Java_shinelee_testc_jni_JniLibrary_stringFromJNI(JNIEnv *env, jobject instance) {
     std::string hello = "Hello from C++";
     int i = 0;
-
     Test test;
     char *result = test.print();
-//    __android_log_print(ANDROID_LOG_DEBUG, "lll", result);
+ //   __android_log_print(ANDROID_LOG_DEBUG, "lll", result);
     return env->NewStringUTF(result);
 }
-
