@@ -1,6 +1,5 @@
-package shinelee.testc;
+package shinelee.main;
 
-import android.app.Application;
 import android.support.multidex.MultiDex;
 import android.support.multidex.MultiDexApplication;
 

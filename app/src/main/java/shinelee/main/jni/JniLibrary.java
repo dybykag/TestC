@@ -1,4 +1,4 @@
-package shinelee.testc.jni;
+package shinelee.main.jni;
 
 /**
  * Created by shine on 2016/11/29.

@@ -1,13 +1,11 @@
 #include <jni.h>
 #include <string>
 #include "Test.h"
-#include "android/log.h"
-#include "android/bitmap.h"
 
 extern "C"
 
 JNIEXPORT jstring JNICALL
-Java_shinelee_testc_jni_JniLibrary_stringFromJNI(JNIEnv *env, jobject instance) {
+Java_shinelee_main_jni_JniLibrary_stringFromJNI(JNIEnv *env, jobject instance) {
     std::string hello = "Hello from C++";
     int i = 0;
     Test test;
